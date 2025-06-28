@@ -7,4 +7,9 @@ router.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../views/index.html'));
 });
 
+router.get('/hello', (req, res) => {
+  res.json({message: 'Hello world'})
+});
+
+
 module.exports = router;
